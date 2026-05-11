@@ -32,10 +32,13 @@ The unusual combination:
 | **Customers in production** | **500+ billiard halls** across China |
 | **Platform GMV** | **~¥3,000,000,000** (3B RMB) flowing through the system |
 | **R&D team** | **10 engineers**, including 1 director-of-engineering hire |
-| **Last 5 months — features shipped by the team** | **50+** production features (low bug rate per feature) |
-| **Last 5 months — modules I personally owned hands-on** | 3 critical: **lighting control · ESC/POS receipt printing · order scheduler** |
+| **Last 5 months — features shipped by the team** | **50+** production features (low bug rate per feature), **most of them written by AI under my orchestration** |
+| **Last 5 months — backend modules I shipped via AI** | 3 Java modules end-to-end with AI: **lighting control · ESC/POS receipt printing · order scheduler** |
+| **Production AI workflow I authored & maintain** | A full set of Cursor rules + skills inside our codebase's `.cursor/` (project-level SOPs, role guardrails, loadable skills) — this is **what actually drives the team's 50+ AI-shipped features**, the practical proof behind the [Build-to-Think manifesto](https://github.com/wangshanbo/ai-native-sop/blob/main/00-manifesto-build-to-think.md) |
+| **Front-end surfaces I continuously maintain** | **5+ apps in active iteration**: cashier desktop · merchant admin web · order-pad app · WeChat mini-program · in-house tooling |
 | **Hardware OEM relationships I personally manage** | **6 categories · 6 factory owners on direct WeChat / phone** |
 | **Third-party hardware/software vendors I integrated with** | **6** in the last 5 months |
+| **Competitor hardware compatibility (the hidden moat)** | I personally reverse-engineer competitor hardware protocols (serial / wire / vendor SDK) so our software accepts the legacy gear competitors' customers already own — directly converted dozens of incumbent venues |
 | **Trade shows attended** | On the floor in person, collecting requirements from billiard hall owners → feeding back into roadmap |
 
 The non-obvious part — **as engineering lead, I dropped my hands-on coding from 80% → 20% of my week**. The 60% I freed up went into supply chain / vendor diligence / trade show requirements / and the open-source side projects below. **In the AI era this is what an engineering lead's leverage actually looks like.**
@@ -89,7 +92,7 @@ AI-native engineer at $2K/mo production scale
 
 > **Doing is the best way of thinking.** I shipped NormCode v0~v9 in 3 months and killed it in month 4. That kill — built on actual production code, not on a PPT — is worth more than 6 months of strategic discussion.
 
-> **As engineering lead in the AI era, your hands-on coding ratio drops to 20%.** The other 80% goes to: vendor diligence, supply chain, customer floor at trade shows, and shipping side projects that compound your reputation.
+> **As engineering lead in the AI era, your job is no longer to type code.** It's to **author the SOPs that let AI type code correctly** (mine live in our codebase's `.cursor/`), and spend the freed bandwidth on the things only humans can do: vendor diligence, supply chain, hardware reverse engineering, customer floor at trade shows, and shipping side projects that compound long-term reputation.
 
 ## Reach out
 
@@ -123,10 +126,13 @@ AI-native engineer at $2K/mo production scale
 | **生产付费客户** | **500+ 球房** |
 | **平台总 GMV** | **~¥30 亿** |
 | **研发团队** | **10 人**（含 1 位浙大硕招进来的研发总监）|
-| **过去 5 个月团队 ship 的功能** | **50+ 个生产功能**，bug 率较低 |
-| **过去 5 个月我亲自下场写的模块** | 3 个关键模块：**灯控 · ESC/POS 小票 · 订单定时任务** |
+| **过去 5 个月团队 ship 的功能** | **50+ 个生产功能**（bug 率较低），**绝大多数由 AI 在我编排下写出** |
+| **过去 5 个月我用 AI 端到端 ship 的 Java 模块** | 3 个关键后端模块：**灯控 · ESC/POS 小票 · 订单定时任务** |
+| **我在生产代码里沉淀并持续维护的 AI workflow** | 公司代码仓库 `.cursor/` 目录里完整的一套 rules + skills（项目 SOP / 角色守门 / 按需加载 skill），**真正驱动团队 50+ AI 产功能落地**，是 [《做就是最好的想》manifesto](https://github.com/wangshanbo/ai-native-sop/blob/main/00-manifesto-build-to-think.md) 的实证 |
+| **我在持续迭代的前端项目** | **5+ 端同时在跑**：收银端（桌面）/ 管理端（Web）/ 点单机 / 小程序 / 内部工具 |
 | **我亲自管的 OEM 工厂老板** | **6 类硬件 / 6 家工厂老板直接微信电话** |
 | **5 个月对接的三方软硬件公司** | **6 家** |
+| **竞品硬件兼容（隐藏护城河）** | 亲自做**竞品硬件协议反推**（串口 / 线协议 / 厂商 SDK），让我们的软件能接住竞品老客户**已经买的存量硬件** —— 直接把数十家原本用竞品的球房整体迁过来 |
 | **展会** | **亲自上展会前线**面对面收球房老板需求，反向推动 roadmap |
 
 非常反常识的一点 —— **作为研发主管，我把"亲自写代码"的占比从 80% 砍到 20%**。多出来的 60% 时间去管供应链、对接三方、上展会、业余 build 上面那些开源。**这才是 AI 时代研发主管的真实杠杆姿势**。
@@ -170,7 +176,7 @@ AI Native 工程师（月烧 $2K 持续生产级使用）
 
 > **做就是最好的想。** NormCode v0~v9 我 ship 了 3 个月，第 4 个月砍了。那次"砍"是基于真实生产代码做的判断，不是 PPT —— 它的价值大于 6 个月的战略讨论。
 
-> **AI 时代的研发主管，亲自写代码占比应该降到 20%**。多出来的 80% 应该投入到：供应商尽调、供应链、展会前线、业余 ship 能复利你声誉的项目。
+> **AI 时代的研发主管，工作内容已经不再是"亲自敲代码"了**。而是**写出能让 AI 正确敲代码的 SOP**（我自己的 SOP 就放在公司代码仓库 `.cursor/` 里），然后把省下来的带宽投入到只有人能做的事上：供应商尽调、供应链、硬件协议反推、展会前线、业余 ship 能复利长期声誉的项目。
 
 ### 找我
 
