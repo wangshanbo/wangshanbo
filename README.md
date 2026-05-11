@@ -1,4 +1,4 @@
-# Wang Shanbo · 王善波
+# Wang Shanbo
 
 > **Doing is the best way of thinking.**
 >
@@ -6,22 +6,20 @@
 >
 > 5 months · 3 AI products shipped on the side · 1 killed · burning **$2,000/month** in top-tier LLMs.
 
-🇬🇧 [English](#english) · 🇨🇳 [中文](#中文)
+🇬🇧 English (you're here) · 🇨🇳 [中文 README →](./README-zh.md)
 
 ---
 
-<a id="english"></a>
-
 ## TL;DR
 
-I'm 36, in Hangzhou. **Engineering Lead + Hardware Sourcing** at **Tai Man Man Tech (台满满科技)** — joined 2 years ago; **hardware sourcing was handed to me within my first 2 months** because of execution speed (most founders don't delegate this in 2 years, mine did in 2 months). Real day job: a production B2B SaaS for billiard halls, **500+ paying venues**, **¥3B platform GMV**, **10-person R&D**.
+I'm 36, in Hangzhou. **Engineering Lead + Hardware Sourcing** at **Tai Man Man Tech (台满满科技)** — joined 2 years ago; **hardware sourcing was handed to me within my first 2 months** because of execution speed (most founders don't delegate this in 2 years; mine did in 2 months). Real day job: a production B2B SaaS for billiard halls — **500+ paying venues**, **¥3B platform GMV**, **10-person R&D**.
 
 The unusual combination:
 
 - **AI-native at production scale** — burn ~**$2,000 / 600M+ tokens per month** on Claude Opus and other frontier models
 - **Cross-platform full-stack** — Web · Mobile · Desktop · Embedded shipped to paying customers in 5+ industries over 11 years
 - **China hardware supply chain insider** — direct OEM-owner relationships for 6 hardware categories (lighting controllers, locker systems, serial-port-charging order pads, smart TVs, all-in-one POS terminals)
-- **Indie builder** — shipped [NormCode](https://github.com/wangshanbo/NormCode) (AI IDE, v1 sunset), [Sentinel](https://github.com/wangshanbo/sentinel-specs) (web, v2 in progress), [Guard](https://github.com/wangshanbo/guard) (Rust policy layer) on the side
+- **Indie builder** — shipped [NormCode](https://github.com/wangshanbo/NormCode) (AI IDE, v1 sunset), [Sentinel](https://github.com/wangshanbo/sentinel-specs) (web app, v2 in progress), [Guard](https://github.com/wangshanbo/guard) (Rust policy layer) on the side
 
 ## Day Job — what I actually do all week
 
@@ -41,7 +39,7 @@ The unusual combination:
 | **Competitor hardware compatibility (the hidden moat)** | I personally reverse-engineer competitor hardware protocols (serial / wire / vendor SDK) so our software accepts the legacy gear competitors' customers already own — directly converted dozens of incumbent venues |
 | **Trade shows attended** | On the floor in person, collecting requirements from billiard hall owners → feeding back into roadmap |
 
-The non-obvious part — **as engineering lead, I dropped my hands-on coding from 80% → 20% of my week**. The 60% I freed up went into supply chain / vendor diligence / trade show requirements / and the open-source side projects below. **In the AI era this is what an engineering lead's leverage actually looks like.**
+The non-obvious part — **as engineering lead in the AI era, my job is no longer to type code**. It's to author the SOPs that let AI type code correctly, and spend the freed bandwidth on the things only humans can do: vendor diligence, supply chain, hardware reverse engineering, customer floor at trade shows, and shipping side projects that compound long-term reputation.
 
 ## What I shipped on the side (last 5 months · evenings & weekends)
 
@@ -50,7 +48,7 @@ The non-obvious part — **as engineering lead, I dropped my hands-on coding fro
 | 🛡️ **[NormCode](https://github.com/wangshanbo/NormCode)** | TypeScript · VS Code fork · GLM | **v1 · sunset** | Long-running AI IDE — 10 versions of agent harness, 13+ core services (BudgetGovernor / HumanGate / EpisodicMemory / FailureTaxonomy / RollingPlanner …). I shipped it. Then I killed the form-factor. Lessons live in Sentinel. |
 | 🚀 **[Sentinel](https://github.com/wangshanbo/sentinel-specs)** | TypeScript · Web App · Node · Sandbox | **v2 · in progress · public specs** | "AI co-founder" web product: anyone, by chatting, ships a real, deployable, evolvable, operable full-stack app. Direct competitor to Bolt / Lovable / v0 / Replit Agent — built around **continuous evolution after launch**, not 5-minute demos. |
 | 🦀 **[Guard](https://github.com/wangshanbo/guard)** | Rust · MCP Server | **shipped** | Policy layer for AI development: MCP gives AI hands, Skills gives AI experience, **Guard makes sure AI doesn't do the wrong thing**. One-line install into any project's `.cursor/mcp.json`. |
-| ✍️ **[ai-native-sop](https://github.com/wangshanbo/ai-native-sop)** | Markdown | 1/10 published | Chinese blog series open-sourcing the methodology behind $2K/month AI spend. Manifesto chapter live: [《Build to Think》](https://github.com/wangshanbo/ai-native-sop/blob/main/00-manifesto-build-to-think.md). |
+| ✍️ **[ai-native-sop](https://github.com/wangshanbo/ai-native-sop)** | Markdown | 1/10 published | Chinese blog series open-sourcing the methodology behind the $2K/month AI spend. Manifesto chapter live: [《Build to Think》](https://github.com/wangshanbo/ai-native-sop/blob/main/00-manifesto-build-to-think.md). |
 
 ## My stack
 
@@ -87,12 +85,18 @@ AI-native engineer at $2K/mo production scale
 
 ## Beliefs
 
+> ## **"AI for everyone — not just for those who can afford the strongest model."**
+>
+> A 70-point model + strong SOPs producing 80-point code beats an 80-point model + weak prompts producing 85-point code at 10× the cost. The first scales to every developer on the planet. The second only scales to the 5% who can afford it.
+>
+> Even as frontier models keep getting stronger and the "tooling layer" keeps getting thinner, **the strongest model will never be cheap enough for everyone**. So my entire methodology — the SOPs, the side projects, the writing — is built for the **95%** who need to ship production-grade code without burning a salary on tokens every month. **I'm building for the 95%.**
+
 > **"Prompt engineering is dead"** is a lie sold by people who can't ship.
 > Real AI leverage comes from **context engineering** — feeding the model your codebase rules, business invariants, and review SOPs every single turn.
 
 > **Doing is the best way of thinking.** I shipped NormCode v0~v9 in 3 months and killed it in month 4. That kill — built on actual production code, not on a PPT — is worth more than 6 months of strategic discussion.
 
-> **Strong model authors the SOP. Weak model runs the code.** Most teams burn frontier-model tokens on every line of generated code. I burn them once on the SOPs (Opus / GPT-5), and let the weakest model that still works (Haiku / 3.5) do the per-line generation. **Costs drop ~10x. Output stays production-grade. The team scales without a single new senior hire.**
+> **Strong model authors the SOP. Weak model runs the code.** Most teams burn frontier-model tokens on every line of generated code. I burn them once on the SOPs (Opus / GPT-5), and let the weakest model that still works (Haiku / 3.5) do the per-line generation. **Costs drop ~10×. Output stays production-grade. The team scales without a single new senior hire.**
 
 > **If the AI ships wrong code, the SOP is wrong — never the model.** This single mental shift is what separates "AI as toy" from "AI as production teammate". Treat AI like a new hire: if the new hire keeps making the same mistake, you don't fire the new hire — you fix the onboarding doc.
 
@@ -103,94 +107,6 @@ AI-native engineer at $2K/mo production scale
 - 📧 [627257359@qq.com](mailto:627257359@qq.com)
 - 🐙 [github.com/wangshanbo](https://github.com/wangshanbo)
 - 💬 即刻 / X / WeChat — links coming soon
-
----
-
-<a id="中文"></a>
-
-## 中文版
-
-我是王善波，36 岁，杭州。
-
-### TL;DR
-
-- 🏢 **台满满科技 · 研发主管 + 硬件采购负责人** —— 入职 2 年，**进公司 2 个月就因为执行速度被老板转交硬件对接和采购**（绝大多数创始人 2 年都不放权，我老板用了 2 个月）
-- 📊 真实业务规模：**服务 500+ 球房 / 平台总流水 ¥30 亿 / 10 人研发部**
-- 🧠 **AI 应用层重度实践者**：业余时间月烧 **\$2,000 / 6 亿 tokens** 在 Claude Opus 等顶级模型上
-- 🚀 **过去 5 个月业余 ship 了 3 个 AI 产品 + 砍了 1 个**：NormCode (v1·已 sunset) / Sentinel (v2·进行中) / Guard (Rust 策略层)
-- 🛠️ **跨端全栈** 11 年：Vue / React / Flutter / TypeScript / Java（存量）/ Rust
-- 🔌 **国内硬件供应链直通**：灯控 / 存杆柜 / 点单机（串口充电）/ 电视 / 一体机 **6 类硬件 / 6 家 OEM 工厂老板直达**
-
-### Day Job — 我每天到底在干什么
-
-| 维度 | 数字 |
-|---|---|
-| **公司** | 台满满科技 · 杭州 · 入职 2 年 |
-| **职位** | 研发主管 + 硬件采购负责人 —— **进公司 2 个月就被老板转交硬件采购**，因执行速度而非资历 |
-| **生产付费客户** | **500+ 球房** |
-| **平台总 GMV** | **~¥30 亿** |
-| **研发团队** | **10 人**（含 1 位浙大硕招进来的研发总监）|
-| **过去 5 个月团队 ship 的功能** | **50+ 个生产功能**（bug 率较低），**绝大多数由 AI 在我编排下写出** |
-| **过去 5 个月我用 AI 端到端 ship 的 Java 模块** | 3 个关键后端模块：**灯控 · ESC/POS 小票 · 订单定时任务**。为什么我亲自下场（用 AI）：当时后端进度太慢，我先把 SOP 写出来**给整个团队提速**，然后用这 3 个模块作为"SOP 是不是真能跑通"的活体验证 |
-| **我在生产代码里沉淀并持续维护的 AI workflow** | 公司代码仓库 `.cursor/` 目录里完整的一套 rules + skills（项目 SOP / 角色守门 / 按需加载 skill）。底层哲学：**用最强模型（Opus / GPT-5）写约束 SOP，用最差但能跑的模型（Haiku / 3.5）跑代码生成**。AI 写错了，**默认责任归我（SOP 不够好），从不甩锅给模型**。目标：**让普通前端 / Java 开发，通过这套 SOP，第一次出手就能写出符合本项目规范的代码**。这是真正驱动团队 50+ AI 产功能落地的东西 —— [《做就是最好的想》manifesto](https://github.com/wangshanbo/ai-native-sop/blob/main/00-manifesto-build-to-think.md) 的活体实证 |
-| **我在持续迭代的前端项目** | **5+ 端同时在跑**：收银端（桌面）/ 管理端（Web）/ 点单机 / 小程序 / 内部工具 |
-| **我亲自管的 OEM 工厂老板** | **6 类硬件 / 6 家工厂老板直接微信电话** |
-| **5 个月对接的三方软硬件公司** | **6 家** |
-| **竞品硬件兼容（隐藏护城河）** | 亲自做**竞品硬件协议反推**（串口 / 线协议 / 厂商 SDK），让我们的软件能接住竞品老客户**已经买的存量硬件** —— 直接把数十家原本用竞品的球房整体迁过来 |
-| **展会** | **亲自上展会前线**面对面收球房老板需求，反向推动 roadmap |
-
-非常反常识的一点 —— **作为研发主管，我把"亲自写代码"的占比从 80% 砍到 20%**。多出来的 60% 时间去管供应链、对接三方、上展会、业余 build 上面那些开源。**这才是 AI 时代研发主管的真实杠杆姿势**。
-
-### 业余 ship 的 4 个公开作品
-
-| 产品 | 状态 | 是什么 |
-|---|---|---|
-| 🛡️ **[NormCode](https://github.com/wangshanbo/NormCode)** | v1 · 已 sunset | 长程 AI IDE，10 个版本完整迭代，13+ 核心服务全部上线后我亲手砍掉了 vscode fork 这个形态 |
-| 🚀 **[Sentinel](https://github.com/wangshanbo/sentinel-specs)** | v2 · 进行中 · 公开 specs | "AI 合伙人"web 产品：让普通人通过对话做出**真实可上线、可演化、可运营**的全栈应用。直接对标 Bolt / Lovable / v0 / Replit Agent |
-| 🦀 **[Guard](https://github.com/wangshanbo/guard)** | 已开源 | Rust 写的 AI 开发策略约束层。**MCP 让 AI 有手脚，Skills 让 AI 有经验，Guard 让 AI 不做错事** |
-| ✍️ **[ai-native-sop](https://github.com/wangshanbo/ai-native-sop)** | 1/10 篇已发布 | 把私人 AI 工作流方法论开源化的中文连载。manifesto 在这里：[《做就是最好的想》](https://github.com/wangshanbo/ai-native-sop/blob/main/00-manifesto-build-to-think.md) |
-
-### 我的稀缺性
-
-```
-AI Native 工程师（月烧 $2K 持续生产级使用）
-  ✕ 跨端全栈（已 ship 5+ 行业付费客户）
-    ✕ 国内 OEM 直达 insider（6 家工厂老板手机号）
-      = 全球范围内不超过 50 个人的画像
-```
-
-- **AI Native 生产级**：月烧 \$2K 持续支出在前沿模型上，3 个 ship 出来的产品作为证据
-- **跨端全栈**：Web / Mobile / 桌面 / Embedded 一人交付完整产品形态
-- **硬件 × AI**：6 类硬件 / 6 家 OEM 老板直达。**AI 硬件原型 2 周可出**，不是 6 个月
-- **B2B SaaS 11 年**：教育 / 电子合同 / 网吧 / 球房 / 零售 POS，全部 ship 到生产付费客户
-- **不是头衔，是话语权**：组织结构上是研发主管；老板**进公司 2 个月就把硬件采购交给我** —— 信任信号在 8 周内就建立了，组织结构是后来才追上的
-
-### 现在在做什么
-
-- 🚀 Sentinel v2 ship 到第一批 100 个真实用户（公开 specs：[`sentinel-specs`](https://github.com/wangshanbo/sentinel-specs)）
-- 🦀 Guard 开源到 Cursor / Claude Code 社区
-- ✍️ 写 [《月烧 \$2,000 AI 反常识 SOP》](https://github.com/wangshanbo/ai-native-sop) 中文连载（共 10 篇）
-- 🔌 用 OEM 供应链 prototype 几个 AI × 硬件实验
-- 🤝 接 **fractional CTO** / **AI 工作流咨询** / **AI × 硬件创业合伙** / **海外 AI Native 团队远程 IC**
-
-### 我相信
-
-> **"Prompt engineering 已死"** 是不会 ship 的人卖的鸡汤。
-> AI 真正的杠杆来自**上下文工程** —— 每一轮对话都把代码规约、业务不变量、review SOP 喂给模型。
-
-> **做就是最好的想。** NormCode v0~v9 我 ship 了 3 个月，第 4 个月砍了。那次"砍"是基于真实生产代码做的判断，不是 PPT —— 它的价值大于 6 个月的战略讨论。
-
-> **用最强模型写 SOP，用最差模型跑代码。** 大多数团队把前沿模型 token 烧在每一行代码生成上。我把它一次性烧在 SOP 上（Opus / GPT-5），然后让最便宜但还能跑的模型（Haiku / 3.5）做每行代码生成。**成本砍 10 倍，产出依然生产级，团队不需要新招一个高级工程师就能扩容。**
-
-> **AI 写错代码 = SOP 不够好，从不归罪于模型。** 这一个心智转换，就是"AI 是玩具" vs "AI 是生产力队友"的分水岭。把 AI 当新员工：新员工反复犯同一个错，你不是开除新员工，是改入职手册。
-
-> **AI 时代的研发主管，工作内容已经不再是"亲自敲代码"了**。而是**写出能让 AI 正确敲代码的 SOP**（我自己的 SOP 就放在公司代码仓库 `.cursor/` 里），然后把省下来的带宽投入到只有人能做的事上：供应商尽调、供应链、硬件协议反推、展会前线、业余 ship 能复利长期声誉的项目。
-
-### 找我
-
-- 📧 627257359@qq.com
-- 🐙 [github.com/wangshanbo](https://github.com/wangshanbo)
-- 💬 即刻 / X / 微信 — 链接持续更新中
 
 ---
 
