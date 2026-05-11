@@ -14,7 +14,7 @@
 
 ## TL;DR
 
-I'm 36, in Hangzhou. **Engineering Lead + Hardware Sourcing** at **Tai Man Man Tech (台满满科技)** — alongside the founder for **5+ years**. Real day job: a production B2B SaaS for billiard halls, **500+ paying venues**, **¥3B platform GMV**, **10-person R&D**.
+I'm 36, in Hangzhou. **Engineering Lead + Hardware Sourcing** at **Tai Man Man Tech (台满满科技)** — joined 2 years ago; **hardware sourcing was handed to me within my first 2 months** because of execution speed (most founders don't delegate this in 2 years, mine did in 2 months). Real day job: a production B2B SaaS for billiard halls, **500+ paying venues**, **¥3B platform GMV**, **10-person R&D**.
 
 The unusual combination:
 
@@ -27,14 +27,14 @@ The unusual combination:
 
 | Dimension | Numbers |
 |---|---|
-| **Company** | Tai Man Man Tech (台满满科技), Hangzhou — 5+ yrs alongside the founder |
-| **Role** | Engineering Lead + Hardware Sourcing |
+| **Company** | Tai Man Man Tech (台满满科技), Hangzhou — joined 2 yrs ago |
+| **Role** | Engineering Lead + Hardware Sourcing — sourcing handed to me within month 2 due to execution speed |
 | **Customers in production** | **500+ billiard halls** across China |
 | **Platform GMV** | **~¥3,000,000,000** (3B RMB) flowing through the system |
 | **R&D team** | **10 engineers**, including 1 director-of-engineering hire |
 | **Last 5 months — features shipped by the team** | **50+** production features (low bug rate per feature), **most of them written by AI under my orchestration** |
-| **Last 5 months — backend modules I shipped via AI** | 3 Java modules end-to-end with AI: **lighting control · ESC/POS receipt printing · order scheduler** |
-| **Production AI workflow I authored & maintain** | A full set of Cursor rules + skills inside our codebase's `.cursor/` (project-level SOPs, role guardrails, loadable skills) — this is **what actually drives the team's 50+ AI-shipped features**, the practical proof behind the [Build-to-Think manifesto](https://github.com/wangshanbo/ai-native-sop/blob/main/00-manifesto-build-to-think.md) |
+| **Last 5 months — backend modules I shipped via AI** | 3 Java modules end-to-end with AI: **lighting control · ESC/POS receipt printing · order scheduler**. Why I went hands-on (with AI): backend was shipping too slow — I built the SOPs first to **un-block the whole team**, then wrote the modules as proof-of-concept of those SOPs. |
+| **Production AI workflow I authored & maintain** | A full set of Cursor rules + skills inside our codebase's `.cursor/` (project-level SOPs, role guardrails, loadable skills). The philosophy underneath: **author the SOPs with the strongest model (Opus / GPT-5), run code generation with the weakest model that still works (Haiku / 3.5)**. If the AI ships wrong code, default blame is on **my SOP**, never on the model. Goal: **let an average front-end or Java engineer, with this SOP set, produce code that conforms to our project's conventions on first attempt**. This is what actually drives the team's 50+ AI-shipped features — the practical proof behind the [Build-to-Think manifesto](https://github.com/wangshanbo/ai-native-sop/blob/main/00-manifesto-build-to-think.md). |
 | **Front-end surfaces I continuously maintain** | **5+ apps in active iteration**: cashier desktop · merchant admin web · order-pad app · WeChat mini-program · in-house tooling |
 | **Hardware OEM relationships I personally manage** | **6 categories · 6 factory owners on direct WeChat / phone** |
 | **Third-party hardware/software vendors I integrated with** | **6** in the last 5 months |
@@ -75,7 +75,7 @@ AI-native engineer at $2K/mo production scale
 - **Cross-platform full-stack**: Web · Mobile · Desktop · Embedded — one person can ship a complete product surface
 - **Hardware × AI**: Direct OEM-owner relationships in China for 6 hardware categories. **I can prototype an AI hardware device in 2 weeks, not 6 months**
 - **B2B SaaS for 11 years**: Education · e-contracts · internet cafes · billiard halls · retail POS — all delivered to production paying customers
-- **Real say, not just title**: Engineering lead by org chart, but 5+ years of trust with the founder means real influence on product / tech / hardware roadmap
+- **Real say, not just title**: Engineering lead by org chart; **the founder handed hardware sourcing over within my first 2 months** at the company — the org chart catches up later, but the trust signal was set in 8 weeks
 
 ## Now
 
@@ -91,6 +91,10 @@ AI-native engineer at $2K/mo production scale
 > Real AI leverage comes from **context engineering** — feeding the model your codebase rules, business invariants, and review SOPs every single turn.
 
 > **Doing is the best way of thinking.** I shipped NormCode v0~v9 in 3 months and killed it in month 4. That kill — built on actual production code, not on a PPT — is worth more than 6 months of strategic discussion.
+
+> **Strong model authors the SOP. Weak model runs the code.** Most teams burn frontier-model tokens on every line of generated code. I burn them once on the SOPs (Opus / GPT-5), and let the weakest model that still works (Haiku / 3.5) do the per-line generation. **Costs drop ~10x. Output stays production-grade. The team scales without a single new senior hire.**
+
+> **If the AI ships wrong code, the SOP is wrong — never the model.** This single mental shift is what separates "AI as toy" from "AI as production teammate". Treat AI like a new hire: if the new hire keeps making the same mistake, you don't fire the new hire — you fix the onboarding doc.
 
 > **As engineering lead in the AI era, your job is no longer to type code.** It's to **author the SOPs that let AI type code correctly** (mine live in our codebase's `.cursor/`), and spend the freed bandwidth on the things only humans can do: vendor diligence, supply chain, hardware reverse engineering, customer floor at trade shows, and shipping side projects that compound long-term reputation.
 
@@ -110,7 +114,7 @@ AI-native engineer at $2K/mo production scale
 
 ### TL;DR
 
-- 🏢 **台满满科技 · 研发主管 + 硬件采购负责人**，跟随创始人 **5+ 年**
+- 🏢 **台满满科技 · 研发主管 + 硬件采购负责人** —— 入职 2 年，**进公司 2 个月就因为执行速度被老板转交硬件对接和采购**（绝大多数创始人 2 年都不放权，我老板用了 2 个月）
 - 📊 真实业务规模：**服务 500+ 球房 / 平台总流水 ¥30 亿 / 10 人研发部**
 - 🧠 **AI 应用层重度实践者**：业余时间月烧 **\$2,000 / 6 亿 tokens** 在 Claude Opus 等顶级模型上
 - 🚀 **过去 5 个月业余 ship 了 3 个 AI 产品 + 砍了 1 个**：NormCode (v1·已 sunset) / Sentinel (v2·进行中) / Guard (Rust 策略层)
@@ -121,14 +125,14 @@ AI-native engineer at $2K/mo production scale
 
 | 维度 | 数字 |
 |---|---|
-| **公司** | 台满满科技 · 杭州 · 跟随创始人 5+ 年 |
-| **职位** | 研发主管 + 硬件采购负责人 |
+| **公司** | 台满满科技 · 杭州 · 入职 2 年 |
+| **职位** | 研发主管 + 硬件采购负责人 —— **进公司 2 个月就被老板转交硬件采购**，因执行速度而非资历 |
 | **生产付费客户** | **500+ 球房** |
 | **平台总 GMV** | **~¥30 亿** |
 | **研发团队** | **10 人**（含 1 位浙大硕招进来的研发总监）|
 | **过去 5 个月团队 ship 的功能** | **50+ 个生产功能**（bug 率较低），**绝大多数由 AI 在我编排下写出** |
-| **过去 5 个月我用 AI 端到端 ship 的 Java 模块** | 3 个关键后端模块：**灯控 · ESC/POS 小票 · 订单定时任务** |
-| **我在生产代码里沉淀并持续维护的 AI workflow** | 公司代码仓库 `.cursor/` 目录里完整的一套 rules + skills（项目 SOP / 角色守门 / 按需加载 skill），**真正驱动团队 50+ AI 产功能落地**，是 [《做就是最好的想》manifesto](https://github.com/wangshanbo/ai-native-sop/blob/main/00-manifesto-build-to-think.md) 的实证 |
+| **过去 5 个月我用 AI 端到端 ship 的 Java 模块** | 3 个关键后端模块：**灯控 · ESC/POS 小票 · 订单定时任务**。为什么我亲自下场（用 AI）：当时后端进度太慢，我先把 SOP 写出来**给整个团队提速**，然后用这 3 个模块作为"SOP 是不是真能跑通"的活体验证 |
+| **我在生产代码里沉淀并持续维护的 AI workflow** | 公司代码仓库 `.cursor/` 目录里完整的一套 rules + skills（项目 SOP / 角色守门 / 按需加载 skill）。底层哲学：**用最强模型（Opus / GPT-5）写约束 SOP，用最差但能跑的模型（Haiku / 3.5）跑代码生成**。AI 写错了，**默认责任归我（SOP 不够好），从不甩锅给模型**。目标：**让普通前端 / Java 开发，通过这套 SOP，第一次出手就能写出符合本项目规范的代码**。这是真正驱动团队 50+ AI 产功能落地的东西 —— [《做就是最好的想》manifesto](https://github.com/wangshanbo/ai-native-sop/blob/main/00-manifesto-build-to-think.md) 的活体实证 |
 | **我在持续迭代的前端项目** | **5+ 端同时在跑**：收银端（桌面）/ 管理端（Web）/ 点单机 / 小程序 / 内部工具 |
 | **我亲自管的 OEM 工厂老板** | **6 类硬件 / 6 家工厂老板直接微信电话** |
 | **5 个月对接的三方软硬件公司** | **6 家** |
@@ -159,7 +163,7 @@ AI Native 工程师（月烧 $2K 持续生产级使用）
 - **跨端全栈**：Web / Mobile / 桌面 / Embedded 一人交付完整产品形态
 - **硬件 × AI**：6 类硬件 / 6 家 OEM 老板直达。**AI 硬件原型 2 周可出**，不是 6 个月
 - **B2B SaaS 11 年**：教育 / 电子合同 / 网吧 / 球房 / 零售 POS，全部 ship 到生产付费客户
-- **不是头衔，是话语权**：组织结构上是研发主管，但跟创始人 5+ 年信任意味着对产品 / 技术 / 硬件 roadmap 有实质影响力
+- **不是头衔，是话语权**：组织结构上是研发主管；老板**进公司 2 个月就把硬件采购交给我** —— 信任信号在 8 周内就建立了，组织结构是后来才追上的
 
 ### 现在在做什么
 
@@ -175,6 +179,10 @@ AI Native 工程师（月烧 $2K 持续生产级使用）
 > AI 真正的杠杆来自**上下文工程** —— 每一轮对话都把代码规约、业务不变量、review SOP 喂给模型。
 
 > **做就是最好的想。** NormCode v0~v9 我 ship 了 3 个月，第 4 个月砍了。那次"砍"是基于真实生产代码做的判断，不是 PPT —— 它的价值大于 6 个月的战略讨论。
+
+> **用最强模型写 SOP，用最差模型跑代码。** 大多数团队把前沿模型 token 烧在每一行代码生成上。我把它一次性烧在 SOP 上（Opus / GPT-5），然后让最便宜但还能跑的模型（Haiku / 3.5）做每行代码生成。**成本砍 10 倍，产出依然生产级，团队不需要新招一个高级工程师就能扩容。**
+
+> **AI 写错代码 = SOP 不够好，从不归罪于模型。** 这一个心智转换，就是"AI 是玩具" vs "AI 是生产力队友"的分水岭。把 AI 当新员工：新员工反复犯同一个错，你不是开除新员工，是改入职手册。
 
 > **AI 时代的研发主管，工作内容已经不再是"亲自敲代码"了**。而是**写出能让 AI 正确敲代码的 SOP**（我自己的 SOP 就放在公司代码仓库 `.cursor/` 里），然后把省下来的带宽投入到只有人能做的事上：供应商尽调、供应链、硬件协议反推、展会前线、业余 ship 能复利长期声誉的项目。
 
